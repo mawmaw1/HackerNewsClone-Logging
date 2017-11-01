@@ -10,7 +10,7 @@ const exec = require('child_process').exec;
 const PORT = 8080
 const HOST = '0.0.0.0'
 const app = express();
-const cmd = 'tail -r -n 1000 errors.txt';
+const cmd = 'tail -n 1000 errors.txt';
 
 
 app.use(cors())
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     exec(cmd, function(error, stdout, stderr) {
         if (error) {
             console.log(error)
-            return res.end('error')
+            return res.status(500).json(error)
         }
         console.log(stdout)
         res.end(stdout)
