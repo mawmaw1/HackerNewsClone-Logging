@@ -6,6 +6,9 @@ DOCKER_ID=$2
 docker stop `docker ps -a | grep ${DOCKER_ID}/hnclogger | awk '{print substr ($0, 0, 12)}'`
 # remove all of those containers
 docker rm `docker ps -a | grep ${DOCKER_ID}/hnclogger | awk '{print substr ($0, 0, 12)}'`
+
+docker system prune -af
+
 if (( ${BUILD_NUMBER} >= 2 )); then
     # remove old image
     docker rmi ${DOCKER_ID}/hnclogger:${BUILD_NUMBER}
