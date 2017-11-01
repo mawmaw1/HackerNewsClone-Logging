@@ -2,3 +2,4 @@
 {"level":"warning","message":"noget gik galt","error":"net.beans.java.bög xD","host":"CMP","timestamp":"Wed Nov 01 2017 18:24:28 GMT+0100 (CET)"}
 {"level":"warning","message":"noget gik galt","error":"net.beans.java.bög xD","host":"CMP","timestamp":"Wed Nov 01 2017 18:24:29 GMT+0100 (CET)"}
 {"level":"warning","message":"noget gik galt","error":"net.beans.java.bög xD","host":"CMP","timestamp":"Wed Nov 01 2017 18:24:29 GMT+0100 (CET)"}
+{"level":"warning","message":"krissen er en fed bøg, og testing af webhook","error":"net.beans.java.bög xD","host":"CMP","timestamp":"Wed Nov 01 2017 18:24:29 GMT+0100 (CET)"}
