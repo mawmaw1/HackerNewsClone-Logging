@@ -15,4 +15,4 @@ if (( ${BUILD_NUMBER} >= 2 )); then
 fi
 # get the newest version of the containerized web application and run it
 docker pull ${DOCKER_ID}/hnclogger:${BUILD_NUMBER}
-docker run --name hnclogger --network hncnetwork -d -ti -p 8089:8080 ${DOCKER_ID}/hnclogger:${BUILD_NUMBER}
+docker run --name hnclogger --network hncnetwork2 --ip 172.19.0.3 -d -ti -p 8089:8080 ${DOCKER_ID}/hnclogger:${BUILD_NUMBER}
